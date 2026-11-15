@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#f8eee9">
+
+    <title>Happy Birthday, Anaraa!</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+        href="anara.css">
+</head>
+
+<body>
+
+    <!-- OPENING SECTION -->
+    <section class="screen" id="home">
+
+        <span class="float f1">✧</span>
+        <span class="float f2">✿</span>
+
+        <div class="card">
+
+            <div class="hero-flower">
+                ❀　✧　❀
+            </div>
+
+            <div class="eyebrow">
+                A little celebration, made for you
+            </div>
+
+            <h1>
+                Happy Birthday
+                <br>
+                <span style="color:var(--rose)">
+                    Anaraa
+                </span>
+            </h1>
+
+            <div class="ornament">
+                ──── ✦ ────
+            </div>
+
+            <p>
+                There's something special waiting for you.
+                <br>
+                Take a little moment, and let the surprise begin.
+            </p>
+
+            <button class="btn" onclick="startSurprise()">
+                OPEN YOUR SURPRISE ✦
+            </button>
+
+            <p class="small" style="margin-top:22px">
+                with a little naughty 
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAIN CONTENT -->
+    <main id="content" class="hidden">
+
+
+        <!-- BIRTHDAY MESSAGE -->
+        <section class="section">
+
+            <div class="eyebrow">
+                01 · A note for you
+            </div>
+
+            <h2 class="serif">
+                 Anaraa Marsha,
+            </h2>
+
+            <div class="section-card">
+
+                <div class="ornament">✧</div>
+
+                <p>
+                    Happy birthday, Anaraa!
+                    Semoga di usia yang baru ini,
+                    hal-hal baik semakin sering datang
+                    menghampirimu. Semoga langkahmu
+                    selalu dimudahkan, impianmu satu
+                    per satu tercapai, dan kamu selalu
+                    punya alasan untuk tersenyum.
+                </p>
+
+                <p>
+                    Lucu juga ya, kita awalnya kenal
+                    saat MPLS, dari orang yang awalnya
+                    belum saling kenal sampai sekarang
+                    bisa berbagi cerita. Terima kasih
+                    sudah menjadi bagian dari cerita itu.
+                </p>
+
+                <p>
+                    Have the sweetest birthday.
+                    You deserve all the beautiful
+                    things coming your way. ♡
+                </p>
+
+                <div class="ornament">
+                    ──── ❀ ────
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MINI GAME 1 -->
+        <section class="section"
+            style="padding-top:25px">
+
+            <div class="eyebrow">
+                02 · Choose your surprise
+            </div>
+
+            <h2>
+                Pick a little gift
+            </h2>
+
+            <p>
+                Choose one box. Each one has
+                a tiny birthday surprise inside!
+            </p>
+
+            <div class="gifts">
+
+                <button class="gift"
+                    onclick="openGift(0)">
+                    🎁
+                    <span>GIFT Nº 01</span>
+                </button>
+
+                <button class="gift"
+                    onclick="openGift(1)">
+                    🎀
+                    <span>GIFT Nº 02</span>
+                </button>
+
+                <button class="gift"
+                    onclick="openGift(2)">
+                    💌
+                    <span>GIFT Nº 03</span>
+                </button>
+
+            </div>
+
+            <div class="section-card hidden"
+                id="giftResult">
+
+                <div class="ornament">✦</div>
+
+                <h2 id="giftTitle"
+                    style="font-size:2rem">
+                </h2>
+
+                <p id="giftText"></p>
+
+                <button class="btn light"
+                    onclick="resetGift()">
+                    Choose another
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- MINI GAME 2 -->
+        <section class="section"
+            style="padding-top:25px">
+
+            <div class="eyebrow">
+                03 · A tiny birthday quiz
+            </div>
+
+            <h2>
+                Let's play!
+            </h2>
+
+            <div class="section-card">
+
+                <p id="questionCount"
+                    class="eyebrow">
+                    QUESTION 1 OF 3
+                </p>
+
+                <h2 id="question"
+                    style="font-size:1.8rem">
+                    Ready?
+                </h2>
+
+                <div class="quiz-options"
+                    id="options">
+                </div>
+
+                <div class="result"
+                    id="quizResult">
+                </div>
+
+                <button class="btn hidden"
+                    id="nextQuestion"
+                    onclick="nextQ()">
+                    Next question →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- MEMORY GALLERY -->
+        <section class="section"
+            style="padding-top:25px">
+
+            <div class="eyebrow">
+                04 · Little memories
+            </div>
+
+            <h2>
+                Moments & memories
+            </h2>
+
+            
+
+            
+<div class="gallery">
+
+    <div class="photo">
+        <img src="foto1.jpg" alt="Little anaraa">
+        <p>Little anaraa ♡</p>
+    </div>
+
+    <div class="photo">
+        <img src="foto2.jpg" alt="Marsha and anaraa">
+        <p>Marsha and anaraa ✧</p>
+    </div>
+
+    <div class="photo">
+        <img src="foto3.jpg" alt="Sweet moments">
+        <p>Sweet moments ❀</p>
+    </div>
+  <div class="photo">
+        <img src="foto4.jpg" alt="A moment with dad">
+        <p>A moment with dad ✧</p>
+  </div>
+
+</div>
+
+
+        </section>
+
+
+        <!-- FINAL SURPRISE -->
+        <section class="section"
+            style="padding-top:25px">
+
+            <div class="eyebrow">
+                05 · Make a wish
+            </div>
+
+            <h2>
+                One last little surprise
+            </h2>
+
+            <div class="section-card">
+
+                <div class="cake">
+                    🎂
+                </div>
+
+                <p>
+                    Close your eyes, make a wish,
+                    then tap the button to blow out
+                    your candle.
+                </p>
+
+                <button class="btn"
+                    id="wishBtn"
+                    onclick="makeWish()">
+                    MAKE A WISH ✨
+                </button>
+
+                <h2 id="wishMessage"
+                    class="hidden"
+                    style="font-size:2rem;margin-top:25px">
+                    May your wishes find their way to you. ♡
+                </h2>
+
+                <p class="small">
+                    Happy birthday once again, Anaraa!
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        MADE WITH ♡ · A LITTLE BIRTHDAY SURPRISE FOR ANARAA
+    </footer>
+  <audio id="birthdayMusic"
+       src="anara.mp3"
+       loop>
+  </audio>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="anara.js"></script>
+
+</body>
+</html>
